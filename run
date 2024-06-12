@@ -1,0 +1,9 @@
+mkdir build
+cd build
+cmake .. -G Ninja
+ninja
+
+Run training:
+	./src/nn train ../data/train
+Run evaluating:
+	./src/nn evaluate ../data/test ./ff.params
